@@ -1,4 +1,3 @@
-
 # ArQave - Archaeological Data Analysis Platform
 
 ## Table of Contents
@@ -26,6 +25,7 @@
 2. **Clustering Analysis** - Groups similar data points using KMeans or Agglomerative clustering
 3. **PCA (Principal Component Analysis)** - Reduces data dimensionality and visualizes patterns
 4. **Ternary Plotting** - Plots slag compositional data on ternary phase diagrams
+5. **PDF Library** - Searchable repository of research papers with metadata filtering
 
 ### Who Is It For?
 
@@ -45,6 +45,7 @@ CITYAI/
 ├── clustering_service.py       # Clustering analysis logic
 ├── pca_service.py              # PCA analysis logic
 ├── plotting_service.py         # Ternary plotting logic
+├── library_service.py          # PDF Library database operations
 ├── requirements.txt            # Python dependencies
 ├── .env                        # Environment variables (not in git)
 ├── .gitignore                  # Git ignore rules
@@ -59,7 +60,8 @@ CITYAI/
 │   ├── pca.html
 │   ├── plotting.html
 │   ├── groups.html
-│   └── image-analysis.html
+│   ├── image-analysis.html
+│   └── library.html
 │
 ├── pages-css/                  # CSS stylesheets
 │   ├── pdf-extract.css
