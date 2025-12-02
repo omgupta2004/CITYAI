@@ -134,6 +134,47 @@
       border-color: #ffcdd2
     }
 
+    .info-box {
+      margin-top: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: linear-gradient(135deg, #e3f2fd 0%, #f1f8ff 100%);
+      border-left: 4px solid var(--primary);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(43, 136, 255, 0.1)
+    }
+
+    .info-box h3 {
+      margin: 0 0 0.75rem 0;
+      font-size: 1.1rem;
+      color: var(--primary-6)
+    }
+
+    .info-box p {
+      margin: 0.5rem 0;
+      line-height: 1.6
+    }
+
+    .info-box ul {
+      margin: 0.75rem 0;
+      padding-left: 1.5rem
+    }
+
+    .info-box li {
+      margin: 0.4rem 0;
+      line-height: 1.5
+    }
+
+    .info-box strong {
+      color: var(--primary-6)
+    }
+
+    .hint-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.75rem !important
+    }
+
     .bar {
       height: 8px;
       background: #e8eefc;
@@ -186,6 +227,19 @@
 
       <div class="bar" id="bar" aria-hidden="true"><span id="barfill"></span></div>
       <span class="sr-only" id="live" aria-live="polite"></span>
+    </div>
+
+    <!-- Quality Constraints Info Box -->
+    <div class="info-box">
+      <h3>Quality Filters</h3>
+      <p>Tables are automatically filtered to ensure data quality. A table is <strong>rejected</strong> if it:</p>
+      <ul>
+        <li><strong>Empty:</strong> Contains no data</li>
+        <li><strong>Too Small:</strong> Less than 2 rows × 2 columns</li>
+        <li><strong>Too Sparse:</strong> More than 40% empty cells</li>
+        <li><strong>Noise:</strong> More than 30% punctuation-only cells (-, ., |, etc.)</li>
+      </ul>
+      <p class="hint-text">Tip: High-quality PDFs with clear table structures work best!</p>
     </div>
   </main>
 

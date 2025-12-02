@@ -11,6 +11,7 @@ from io import BytesIO
 from collections import defaultdict
 
 # Ternary diagram map: system name -> (image path, extent)
+
 TERNARY_MAP = {
     "CaO–SiO2–Al2O3": ("ternary/CaAlSi Ox clean str.jpg", [-5.5, 105, -10.5, 95]),
     "K2O–SiO2–Al2O3": ("ternary/KAlSiOx clean.jpg", [-2, 103, -5, 87]),

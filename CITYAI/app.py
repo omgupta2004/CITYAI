@@ -44,6 +44,26 @@ def db():
     conn.row_factory = sqlite3.Row
     return conn
 
+
+def init_db():
+    conn = db()
+    c = conn.cursor()
+    c.execute("""
+        CREATE TABLE IF NOT EXISTS uploads(
+            id TEXT PRIMARY KEY,
+            filename TEXT NOT NULL,
+            pdf_path TEXT NOT NULL,
+            excel_path TEXT,
+            status TEXT DEFAULT 'pending',
+            created_at TEXT,
+            error_msg TEXT,
+            extraction_details TEXT
+        )
+    """)
+    conn.commit()
+    conn.close()
+
+
 init_db()
 
 
